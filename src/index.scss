@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.boardmain {
+  min-width: 114px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status-container {
+  text-align: center;
+}
+
+.status {
+  padding-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  color: white;
+  float: left;
+  font-weight: bold;
+
+// on every click the below 3 properties will scale up 1.1
+// font-size will have to scale up with the :root or * selector
+  font-size: 24px;
+  /* line-height: 38px; */
+  height: 38px;
+  width: 38px;
+
+  margin: -1px;
+  text-align: center;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+/* not implemented yet */
+.game-info {
+  margin-left: 20px;
+}
